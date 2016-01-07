@@ -4,19 +4,19 @@ app.service('mathService', function(){
 
 	this.add = function(a, b){
 		return a + b;
-	}
+	};
 
 	this.subtract = function(a, b){
 		return a - b;
-	}
+	};
 
 	this.multiply = function(a, b){
 		return a * b;
-	}
+	};
 
-	this.multiply = function(a, b){
+	this.divide = function(a, b){
 		return a / b;
-	}
+	};
 
 });
 
@@ -24,11 +24,11 @@ app.service('calcService', function(mathService){
 
 	this.square = function(a){
 		return mathService.multiply(a, a);
-	}
+	};
 
 	this.cube = function(a){
 		return mathService.multiply(a, mathService.multiply(a, a));
-	}
+	};
 
 });
 
@@ -43,5 +43,11 @@ app.controller('calcController', function($scope, calcService){
 
 		$scope.answer = calcService.cube($scope.number);
 	}
+    $scope.reset = function(){
+
+        $scope.number = '';
+        $scope.answer = '';
+    }
 
 });
+

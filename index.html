@@ -34,43 +34,43 @@
            </nav>
 
            <!-- Page Content -->
-           <div class="container">
-				
+           <div class="container">				
 
-               <div class="row" ng-app="myApp" >
-                   		<div ng-controller="calcController">
-                   		   <div class="col-lg-12">
-		                       <div class="col-lg-4">
-									<form class="form-inline">
-									  <div class="form-group">
-									    <label for="">Enter Number Here</label>
-									    <input type="number" ng-model="number"class="form-control" id="numberInput" placeholder="ex. 34">
-									  </div>							  
-									</form>
-		                       </div>
-	                           <div class="col-lg-4">
-	                           
-	                             <a class="btn btn-default" ng-click="doSquare()" href="#" role="button">X2</a>
-	                             <a class="btn btn-default" ng-click="doCube()" href="#" role="button">X3</a>
-	                             
-	                           </div>
-	                           <div class="col-lg-4">&nbsp;</div>
-                   		   </div>
-                   		   <div class="spacer50"></div>
-	                       <div class="col-lg-12">
-                              <div class="col-lg-4" >
-       							<form class="form-inline">
-       							  <div class="form-group">
-       							    <label for="">Answer: </label>
-       							    <span>{{answer}}</span>
-       							  </div>							  
-       							</form>
-                              </div>
-						  </div>
-						</div>                   
+               <div class="row" ng-app="myApp">
+                  <div ng-controller="calcController">
+                   	<div class="col-lg-12">
+  		                <div class="col-lg-4">
+      									<form class="form-inline">
+      									  <div class="form-group">
+      									    <label for="">Enter Number Here</label>
+      									    <input type="number" ng-model="number" class="form-control" id="numberInput" placeholder="ex. 34">
+      									  </div>							  
+      									</form>
+  		                </div>
+                      <div class="col-lg-4">
+                     
+                       <a class="btn btn-default" ng-click="doSquare()" href="#" role="button">X2</a>
+                       <a class="btn btn-default" ng-click="doCube()" href="#" role="button">X3</a>
+                       <a class="btn btn-default" ng-click="reset()" href="#" role="button">Reset</a>
+                       
+                      </div>
+                      <div class="col-lg-4">&nbsp;</div>
+           		      </div>
+             		    <div class="spacer50"></div>
+                    <div class="col-lg-12">
+                    <div class="col-lg-4" >
+         							<form class="form-inline">
+         							  <div class="form-group">
+         							    <label for="">Answer: </label>
+         							    <span>{{answer}}</span>
+         							  </div>							  
+         							</form>
+                    </div>
+						        </div>
+						      </div> 
+
                </div>
-               <!-- /.row -->
-
-           </div>
+               <!-- /.row -->                
+          </div>
     </body>
 </html>
